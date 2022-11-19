@@ -15,9 +15,9 @@
     <header>
       <nav>
         <a href="/">Home</a>
-        <a href="/signup">Sign up</a>
-        <a href="/dashboard">Dashboard</a>
+        <a href="/signup">Sign up</a>        
         {{#if loggedIn}}
+        <a href="/dashboard">Dashboard</a>
         <button id="logout" class="btn-nav">Logout</button>
         {{else}}
         <a href="/login">Login</a>
@@ -28,6 +28,7 @@
       </h1>
     </header>
     <main>
+      </br>
       {{{ body }}}
     </main>
     <footer>

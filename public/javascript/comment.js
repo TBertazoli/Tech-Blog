@@ -28,3 +28,9 @@ async function commentFormHandler(event) {
   
   document.querySelector('.comment-form').addEventListener('submit', commentFormHandler);
   
+
+  async function navigateBackHome() {
+    window.location.href = "/";
+  }
+
+  document.querySelector('#close-comment').addEventListener('click', navigateBackHome);

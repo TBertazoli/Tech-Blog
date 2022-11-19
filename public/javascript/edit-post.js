@@ -27,3 +27,10 @@ async function editFormHandler(event) {
   
   document.querySelector('.edit-post-form').addEventListener('submit', editFormHandler);
   
+
+  async function navigateBackToDashboard() {
+    window.location.href = "/dashboard";
+  }  
+  
+  document.querySelector('#close-edit-post').addEventListener('click', navigateBackToDashboard);
+  
