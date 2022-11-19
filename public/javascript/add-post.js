@@ -24,3 +24,7 @@ async function newFormHandler(event) {
   
   document.querySelector('.new-post-form').addEventListener('submit', newFormHandler);
   
+  async function navigateBackHome() {
+    window.location.href = "/";
+  }
+  document.querySelector('#close-dashboard').addEventListener('click', navigateBackHome);
